@@ -1,0 +1,63 @@
+t1 = 0     t2 = 1 nextTerm = 0
+
+n = input
+
+anggap n = 6
+
+i = 0	t1 = 0		t2 = 1		nextTerm = 1		print 0	
+i = 1	t1 = 1		t2 = 1		nextTerm = 2		print 1
+i = 2	t1 = 1		t2 = 2		nextTerm = 3		print 1
+i = 3	t1 = 2		t2 = 3		nextTerm = 5		print 2
+i = 4	t1 = 3		t2 = 5		nextTerm = 8		print 3
+i = 5	t1 = 5		t2 = 8		nextTerm = 13		print 5
+
+
+rekursif
+
+- input variabel ulang
+- variabel ulang misal 5
+
+- i = 0		fibonacci(0)		nilai return fungsi fibonacci = 0
+- i = 1		fibonacci(1)		nilai return fungsi fibonacci = 1
+- i = 2		fibonacci(2)		nilai return fungsi fibonacci = 1
+- i = 3		fibonacci(3)		nilai return fungsi fibonacci = 2
+- i = 4		fibonacci(4)		nilai return fungsi fibonacci = 3
+
+penjelasan fibonaci(2), perhatikan nilai n = 2
+apakah n = 0? tidak
+apakah n = 1? tidak
+maka nilai return = fibonaci(n-2) + fibonaci(n-1)
+fibonaci(n-2) = (2-2) = fibonaci(0) -> maka return 0
+fibonaci(n-1) = (2-1) = fibonaci(1) -> maka return 1
+0 + 1 = 1
+
+=============================================================
+
+penjelasan fibonaci(3), perhatikan nilai n = 3
+apakah n = 0? tidak
+apakah n = 1? tidak
+maka nilai return = fibonaci(n-2) + fibonaci(n-1)
+
+fibonaci(3-2) + fibonaci(3-1)
+fibonaci(1) + fibonaci(2)
+1 + fibonaci(0) + fibonaci(1)
+1 + 	0 	+ 	1 	= 	2
+
+==============================================================
+
+penjelasan fibonaci(4), perhatikan nilai n = 4
+apakah n = 0? tidak
+apakah n = 1? tidak
+maka nilai return = fibonaci(n-2) + fibonaci(n-1)
+
+NOTE: NILAI RETURN FIBONACI DENGAN N > 1 ADALAH FIBONACI(n-2) + FIBONACI(n-1)
+
+fibonaci(4-2) 			+ 	fibonaci(4-1)
+
+fibonaci(2)			+	fibonaci(3)
+
+fibonaci(0) + fibonaci(1)	+	fibonaci(1) + fibonaci(2) 
+
+0	+	1		+	  1	    + fibonaci(0) + fibonaci(1)
+
+0	+	1		+	  1	    +     0       +        1     = 	3
